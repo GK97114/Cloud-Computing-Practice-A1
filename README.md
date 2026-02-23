@@ -22,6 +22,7 @@ Each product contains:
 
 ## Folder Architecture
 
+```
 backend/
 │
 ├── controllers/
@@ -34,6 +35,7 @@ backend/
 ├── products.db
 ├── package.json
 └── README.md
+```
 
 ## Technology Stack
 
@@ -51,8 +53,8 @@ backend/
 - [x] Implement product creation endpoint
 - [x] Implement product retrieval endpoint
 - [x] Test locally
-- [] Push to GitHub
-- [] Deploy to Railway
+- [ ] Push to GitHub
+- [ ] Deploy to Railway
 
 ## Commit Types Documentation
 - I will follow Conventional Commits syntax; <type>(optional scope): <short description>
