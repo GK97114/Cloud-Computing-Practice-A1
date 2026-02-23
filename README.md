@@ -53,3 +53,13 @@ backend/
 - [x] Test locally
 - [] Push to GitHub
 - [] Deploy to Railway
+
+## Commit Types Documentation
+- I will follow Conventional Commits syntax; <type>(optional scope): <short description>
+- feat = New Feature/Functionality
+- fix = Bug fix
+- chore = Non-feture changes (build, tooling)
+- docs = documentation changes
+- style = formatting
+- refactor = code restructuring without changing behavior
+- test = add or update tests
