@@ -32,6 +32,8 @@ const getAllProducts = (req, res) => {
  */
 const createProduct = (req, res) => {
     try {
+        console.log("createProduct hit", req.body);
+
         const { name, price } = req.body;
 
         // Validate and sanitize input
