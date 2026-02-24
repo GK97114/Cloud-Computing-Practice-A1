@@ -44,6 +44,17 @@ backend/
 - SQLite (better-sqlite3)
 - Railway for deployment
 
+## API Endpoints
+
+URL: https://cloud-computing-practice-a1-production.up.railway.app
+
+GET All products: GET /api/products
+
+POST Create Product: POST /api/products
+- Content-Type: application/json
+- Price must be a # not a string
+- follow json format = {"name": "nameOfProduct", "price": ###.### (Real #)}
+
 ## Production Workflow
 
 - [x] Initialize project with npm
@@ -53,8 +64,8 @@ backend/
 - [x] Implement product creation endpoint
 - [x] Implement product retrieval endpoint
 - [x] Test locally
-- [ ] Push to GitHub
-- [ ] Deploy to Railway
+- [x] Push to GitHub
+- [x] Deploy to Railway
 
 ## Commit Types Documentation
 - I will follow Conventional Commits syntax; <type>(optional scope): <short description>
