@@ -2,9 +2,6 @@
 const express = require("express");
 const app = express();
 
-// Import database
-require("./db/database");
-
 // Import routes
 const productRoutes = require("./routes/productRoutes");
 

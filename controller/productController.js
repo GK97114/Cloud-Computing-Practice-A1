@@ -1,4 +1,3 @@
-const db = require("../db/database");
 
 /**
  * Gets all products from the database
@@ -9,16 +8,7 @@ const db = require("../db/database");
  * @param {import("express").Response} res is the response object used to send back the list of products or an error message
  */
 const getAllProducts = (req, res) => {
-    try {
-        const stmt = db.prepare("SELECT * FROM products");
-        const products = stmt.all();
-
-        // Return the products as JSON
-        res.json(products);
-    } catch (error) {
-        console.error("Error fetching products:", error);
-        res.status(500).json({ error: "Failed to fetch products" });
-    }
+    
 };
 
 /**
@@ -45,15 +35,8 @@ const createProduct = (req, res) => {
         }
 
         // Prepare and execute the insert statement
-        const stmt = db.prepare("INSERT INTO products (name, price) VALUES (?, ?)");
-        const result = stmt.run(name, price);
 
         // Return the newly created product with its ID
-        const newProduct = {
-            id: result.lastInsertRowid,
-            name,
-            price
-        };
 
         // Return the new product as JSON
         res.status(201).json(newProduct);

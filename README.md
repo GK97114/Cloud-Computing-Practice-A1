@@ -66,7 +66,12 @@ POST Create Product: POST /api/products
 - [x] Test locally
 - [x] Push to GitHub
 - [x] Deploy to Railway
-- [ ] Refactor Database to PostGre instead of file based SQLite
+- [ ] Remove SQLite
+- [ ] Introduce PostGreSQL connection layer
+- [ ] Convert controller to Async + PostgreSQL
+- [ ] Recreate Schema
+- [ ] Make app environment-aware
+- [ ] Handle connection behavior
 
 ## Commit Types Documentation
 - I will follow Conventional Commits syntax; <type>(optional scope): <short description>
