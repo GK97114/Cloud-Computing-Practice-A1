@@ -66,6 +66,7 @@ POST Create Product: POST /api/products
 - [x] Test locally
 - [x] Push to GitHub
 - [x] Deploy to Railway
+- [ ] Refactor Database to PostGre instead of file based SQLite
 
 ## Commit Types Documentation
 - I will follow Conventional Commits syntax; <type>(optional scope): <short description>
