@@ -66,9 +66,9 @@ POST Create Product: POST /api/products
 - [x] Test locally
 - [x] Push to GitHub
 - [x] Deploy to Railway
-- [ ] Remove SQLite
-- [ ] Introduce PostGreSQL connection layer
-- [ ] Convert controller to Async + PostgreSQL
+- [x] Remove SQLite
+- [x] Introduce PostGreSQL connection layer
+- [x] Convert controller to Async + PostgreSQL
 - [ ] Recreate Schema
 - [ ] Make app environment-aware
 - [ ] Handle connection behavior
