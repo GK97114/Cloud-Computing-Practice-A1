@@ -11,6 +11,7 @@ const pool = require("../db/database");
 const getAllProducts = async (req, res) => {
     try {
         const result = await db.query("SELECT * FROM products");
+        console.log("Querying all products...");
         res.json(result.rows);
     } catch (error) {
         console.error("Error fetching products:", error);
