@@ -10,7 +10,7 @@ const pool = require("../db/database");
  */
 const getAllProducts = async (req, res) => {
     try {
-        const result = await db.query("SELECT * FROM products");
+        const result = await pool.query("SELECT * FROM products");
         console.log("Querying all products...");
         res.json(result.rows);
     } catch (error) {
@@ -43,7 +43,7 @@ const createProduct = async (req, res) => {
         }
 
         // Prepare and execute the insert statement
-        const result = await db.query(
+        const result = await pool.query(
             "INSERT INTO products (name, price) VALUES ($1, $2) RETURNING id, name, price",
             [name, price]
         );
