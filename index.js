@@ -11,6 +11,12 @@ const productRoutes = require("./routes/productRoutes");
 // Middleware
 app.use(express.json()); // For parsing application/json
 
+// Middleware to add replica ID to response locals
+app.use((req, res, next) => {
+  res.locals.replicaId = process.env.RAILWAY_REPLICA_ID || "replica-unknown";
+  next();
+});
+
 // Routes
 app.use("/api/products", productRoutes);
 

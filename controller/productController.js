@@ -12,7 +12,10 @@ const getAllProducts = async (req, res) => {
     try {
         const result = await pool.query("SELECT * FROM products");
         console.log("Querying all products...");
-        res.json(result.rows);
+        res.json({
+            replicaId: res.locals.replicaId,
+            products: result.rows
+        });
     } catch (error) {
         console.error("Error fetching products:", error);
         res.status(500).json({ error: "Failed to fetch products" });
@@ -49,7 +52,10 @@ const createProduct = async (req, res) => {
         );
 
         // Return the new product as JSON
-        res.status(201).json(result.rows[0]);
+        res.status(201).json({
+            replicaId: res.locals.replicaId,
+            product: result.rows[0]
+        });
 
     } catch (error) {
         console.error("Error creating product:", error);
