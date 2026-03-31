@@ -69,9 +69,9 @@ POST Create Product: POST /api/products
 - [x] Remove SQLite
 - [x] Introduce PostGreSQL connection layer
 - [x] Convert controller to Async + PostgreSQL
-- [ ] Recreate Schema
-- [ ] Make app environment-aware
-- [ ] Handle connection behavior
+- [x] Recreate Schema
+- [x] Make app environment-aware
+- [x] Handle connection behavior
 
 ## Commit Types Documentation
 - I will follow Conventional Commits syntax; <type>(optional scope): <short description>
